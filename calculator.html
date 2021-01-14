@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
+<script src=FileSaver.js></script>
+<script>
+    function med_result(){
+               var sub1=document.getElementById('s1').value;
+               var sub2=document.getElementById('s2').value;
+               var sub3=document.getElementById('s3').value;
+               var demo=document.getElementById('demo').value;
+               var name=document.getElementById('name').value;
+               var user_name=document.getElementById('user_name').value;
+               var content="MedicoRoute"+"\n"+"\n"+"Hi"  +user_name+  "\n"+ "Marks obtained for Physics:" + sub1+"\n"+"Marks obtained for Chemistry:" + sub2+"\n"+"Marks obtained for Biology:"+ sub3+"\n"+"At finally,"+demo+" ";
+               var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
+               saveAs(blob,name);
+            }
+</script>
+
+<script type="text/javascript">
+        function result(){
+        if(document.getElementById('user_name').value==""){
+            window.alert("Enter Name please");
+            return false;
+        }
+        else if(document.getElementById('s1').value==""){
+            window.alert("Enter Physics mark");
+            return false;
+        }
+        else if(document.getElementById('s2').value==""){
+            window.alert("Enter Chemistry mark");
+            return false;
+        }
+        else if(document.getElementById('s3').value==""){
+            window.alert("Enter Biology mark");
+            return false;
+        }
+        
+        if(document.getElementById('s1').value>200){
+            window.alert("Invalid Mark in Physics :(");
+            return false;
+        }
+        else if(document.getElementById('s1').value<0){
+            window.alert("Please enter the positive value in Physics :(");
+            return false;
+
+        }
+        if(document.getElementById('s2').value>200){
+            window.alert("Invalid Mark in Chemistry:(");
+            return false;
+        }
+        else if(document.getElementById('s2').value<0){
+            window.alert("Please enter positive value in Chemistry :(");
+            return false;
+        }
+        if(document.getElementById('s3').value>200){
+            window.alert("Invalid Mark in Biology:(");
+            return false;
+        }
+        else if(document.getElementById('s3').value<0){
+            window.alert("Please enter positive value in Biology :(");
+            return false;
+        }
+        
+        var a=parseInt(document.getElementById('s1').value);
+        var b=parseInt(document.getElementById('s2').value);
+        var c=parseInt(document.getElementById('s3').value);
+        var physics=a/2;
+        var chemistry=b/4;
+        var biology=c/4;
+        var total=physics+chemistry+biology;
+        document.getElementById("demo").innerHTML = "You have "+total+"cut-off";
+        }</script>
+        
+    </head>
+    <body>
+        <div class="space">
+            <center>
+                <h2><font color="crimson" size="17px">
+                        Medical Cut-off Calculator
+                    </font>
+                </h2>
+            </center>
+        </div>
+        <div class="row">
+        <div class="column">
+    <div id="HSC">
+        <form action="#">
+            <fieldset>
+        <div class="hschead"><center><h1><b><font color="white">* Bio Mathematics Students *</font></b></h1></center></div>
+      <center><h2><font color="yellow">Your Name: <input type="text" id="user_name" size="30"></font></h2></div></center>
+
+        <center><h2><font color="white" >Physics: <b><input type="text" id="s1" size="30">
+     </b></font></h2> </center>
+    <center><h2><font color="white">Chemistry: <b><input type="text" size="30" id="s2" >
+     </b></font></h2>
+        </center>
+        <center><h2><font color="white">Biology: <b><input type="text" size="30"id="s3" >
+        </b></font></h2>
+           </center>
+           
+           <center><input type="submit" onclick="result()"></center>
+          <center> <textarea id="demo" row="5" column="12"></textarea></center>
+        <center><input type="reset" value="Reset" id="Reset">  </center> <br>
+             <div class="download">
+                 <center><font color="indigo"><h3>Don't forgot to save your work :)</h3></font></center><br>
+                <center><input type="text" size="30" id="name" placeholder="File Name"> <button type="submit" onclick="med_result()">Download</button></center>
+
+             </div>
+            </fieldset></form></div>
+        </div>   
+        </div>
+</body>
+</html>

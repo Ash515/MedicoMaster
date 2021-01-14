@@ -1,0 +1,224 @@
+*{
+    display: border-box;
+}
+.title-bar{
+    display:flex;
+    background-color: rgba(34, 7, 58, 0.863);
+    color:white;
+}
+.title-bar h2{
+    padding-left: 20px;
+}
+.container{
+    position:relative;
+    overflow:hidden;
+    width: 100%;
+height:50vh;
+}
+.container .slider{
+position:absolute;
+top:10px;
+left:0px;
+width:500%;
+
+float:left;
+animation: animate 10s linear infinite;
+}
+.container .slider .slide{
+    position:relative;
+    width:20%;
+    height:350px;
+    float:left;
+}
+.container .slider .slide h1{
+    margin:0;
+    padding:0;
+    color:black;
+    font-size: 18px;
+}
+.slide1{
+    background: url('./images/med1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slide2{
+    background: url('./images/med2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slide3{
+    background: url('./images/med3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slide4{
+    background: url('./images/med4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slide5{
+    background: url('./images/med5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slide1{
+    background: url('./images/med1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+@keyframes animate{
+    0%{
+      left:0%;
+    }
+    20%{
+      left:0%;
+    }
+    25%{
+      left:-100%;
+    }
+    45%{
+      left:-100%;
+    }
+    50%{
+      left:-200%;
+    }
+    70%{
+      left:-200%;
+    }
+    75%{
+      left:-300%;
+    }
+    95%{
+      left:-300%;
+      
+    }
+    100%{
+      left:-400%;
+    }
+ }
+ .About{
+  background-color:rgb(110, 204, 149);
+  padding-top: 10px;
+  padding-bottom:80px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight:16px;
+ }
+ ul {
+    display: table;
+    margin: 0 auto;
+    color:maroon;
+  }
+.content{
+    margin-left:10%;
+    margin-right:10%;
+    
+}
+
+.links{
+    text-decoration: none;
+    background-color: rgba(114, 89, 138, 0.534);
+    padding-bottom: 50px;
+    padding-top: 50px;	
+    margin-top: 10px;
+}
+.xop-section {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.xop-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.xop-grid:after {
+	clear: both;
+}
+
+.xop-grid:after, .xop-box:before {
+	content: '';
+	display: table;
+}
+
+
+.xop-grid li{
+	width:300px;
+	height:300px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.xop-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius:5px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+.xop-box:hover {
+    transform: scale(1.05);
+   background-color: rgb(8, 8, 43); 
+   opacity: 0.3;
+}
+.xop-img-1 {
+	background-image:linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('./images/calculator.png');
+    background-size: cover;
+}
+.xop-img-2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url('./images/course.png');
+}
+.xop-img-3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url('./images/exam.png');
+}
+.links:hover .middle{
+    opacity: 1;
+}
+.text{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    margin-top:100px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+  }
+  .middle{
+     
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.footer{
+    background-color: rgb(44, 14, 14);
+    font-family: cursive;
+    color:white;
+    font-size: 12px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+@media only screen and (max-width:600px){
+    body{
+        background-color: #4CAF50;
+    }
+}
