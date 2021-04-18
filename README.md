@@ -16,6 +16,10 @@ Medico Master is a website contains all the basic needs for higher secondary stu
 <img src="Output Images/OP3.png" width="400px">   <img src="Output Images/OP4.png" width="400px">
 <img src="Output Images/OP5.png" width="400px">   
 
+# Tech Stacks 👩‍💻
+- HTML
+- CSS
+
 # Developers ❤
 [Ashwin Kumar Ramaswamy](https://github.com/Ash515)
 
