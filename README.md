@@ -10,7 +10,15 @@ Medico Master is a website contains all the basic needs for higher secondary stu
 
 [Medico Master](https://ash515.github.io/MedicoMaster/)
 
-# Developers
+# Image Results 😎
+
+<img src="Output Images/OP1.png" width="400px">   <img src="Output Images/OP2.png" width="400px">
+<img src="Output Images/OP3.png" width="400px">   <img src="Output Images/OP4.png" width="400px">
+<img src="Output Images/OP5.png" width="400px">   
+
+# Developers ❤
+[Ashwin Kumar Ramaswamy](https://github.com/Ash515)
+
 
 
 
